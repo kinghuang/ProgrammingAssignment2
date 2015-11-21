@@ -1,5 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
+## cachematrix contains two utility functions for solving the inverse
+## of matrices and stored the results for reuse.
 
 ## makeCacheMatrix takes in a matrix x and returns a list containing
 ## functions for getting and setting the matrix and its inverse.
