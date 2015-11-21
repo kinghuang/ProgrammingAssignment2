@@ -1,10 +1,19 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## makeCacheMatrix takes in a matrix x and returns a list containing
+## functions for getting and setting the matrix and its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
-
+	inv <- NULL
+	set <- function(y) {
+		x <<- y
+		inv <<- NULL
+	}
+	get <- function() x
+	setinv <- function(minv) inv <<- minv
+	getinv <- function() inv
+	list(set = set, get = get, setinv = setinv, getinv = getinv)
 }
 
 
